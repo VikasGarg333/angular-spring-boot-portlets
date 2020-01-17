@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
 
-	<context:component-scan base-package="com.wordpress.kkaravitis.modules.books.catalog" />
+	<context:component-scan base-package="com.wordpress.kkaravitis.modules.books.catalog, com.wordpress.kkaravitis.modules.authors" />
 	<mvc:annotation-driven />
 
 	<bean id="messageSource"

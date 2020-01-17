@@ -9,6 +9,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BooksCatalogComponent } from './books-catalog/books-catalog.component';
+import { AuthorsComponent } from './authors/authors.component';
 import { MessagesComponent } from './messages/messages.component';
 import { httpInterceptorProviders } from './http-interceptors';
 import {createCustomElement} from '@angular/elements';
@@ -18,7 +19,8 @@ import { ConfigurationService } from './configuration.service';
   declarations: [
     TestComponent,
     MessagesComponent,
-    BooksCatalogComponent
+    BooksCatalogComponent,
+    AuthorsComponent
   ],
   imports: [
     BrowserModule, 
@@ -36,7 +38,8 @@ import { ConfigurationService } from './configuration.service';
     httpInterceptorProviders
   ],
   entryComponents: [
-    BooksCatalogComponent
+    BooksCatalogComponent,
+    AuthorsComponent
   ],
    //Uncomment bootstrap to run the TestComponent as an independent app 
    //bootstrap: [TestComponent]
@@ -47,6 +50,7 @@ export class AppModule {
   
   constructor(private injector: Injector) {
       customElements.define('books-catalog', createCustomElement(BooksCatalogComponent, { injector }));
+      customElements.define('authors', createCustomElement(AuthorsComponent, { injector }));
   }
   ngDoBootstrap() {}
 }

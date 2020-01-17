@@ -11,6 +11,15 @@
 		<footer-portlet-javascript>/js/runtime.js</footer-portlet-javascript>
 		<footer-portlet-javascript>/js/books-catalog.js</footer-portlet-javascript>
 	</portlet>
+	<portlet>
+		<portlet-name>authors</portlet-name>
+		<icon>/icon.png</icon>
+		<instanceable>true</instanceable>
+		<header-portlet-css>/css/deeppurple-amber.css</header-portlet-css>
+		<footer-portlet-css>/css/books-catalog.css</footer-portlet-css>
+		<footer-portlet-javascript>/js/runtime.js</footer-portlet-javascript>
+		<footer-portlet-javascript>/js/books-catalog.js</footer-portlet-javascript>
+	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>
 		<role-link>Administrator</role-link>

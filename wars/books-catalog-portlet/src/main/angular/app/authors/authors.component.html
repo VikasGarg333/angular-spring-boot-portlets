@@ -1,0 +1,20 @@
+<div class="spinner-container" *ngIf="loading$ | async">
+   <mat-spinner></mat-spinner>
+</div>
+<div class="container-fluid">
+    <h2>Authors</h2>
+    <hr>
+
+    <div class="row-fluid">
+        <mat-card *ngFor="let author of authors">
+            <div class="select-area" (click) = "select(author)">
+                <mat-card-title>{{author.authorId}}</mat-card-title>
+                <mat-card-subtitle>{{author.authorName}}</mat-card-subtitle>
+                <mat-card-subtitle>isbn: {{author.authorRating}}</mat-card-subtitle>
+            </div>
+        </mat-card>
+    </div>
+</div>
+
+
+
